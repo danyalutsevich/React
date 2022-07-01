@@ -1,2 +1,3 @@
-# Timer
-# Modern art
+# Components
+- Timer
+- Modern art
