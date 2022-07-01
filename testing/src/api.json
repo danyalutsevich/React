@@ -1,0 +1,1523 @@
+{
+    "startIndex": 0,
+    "totalCount": 15278,
+    "filteredCount": 15278,
+    "itemsPerPage": 15,
+    "aggregations": {
+        "authors": {
+            "displayed_as": {
+                "fr": "Nom artiste",
+                "en": "Artist name"
+            },
+            "pos": 10,
+            "terms": [],
+            "total": 2344
+        },
+        "tree_domain_all": {
+            "displayed_as": {
+                "fr": "Type d'œuvre",
+                "en": "Artwork type"
+            },
+            "pos": 30,
+            "tree": true,
+            "terms": [],
+            "total": 75
+        },
+        "year": {
+            "displayed_as": {
+                "fr": "Année création",
+                "en": "Creation year"
+            },
+            "pos": 50,
+            "terms": [],
+            "total": 128
+        },
+        "year_acq": {
+            "displayed_as": {
+                "fr": "Année acquisition",
+                "en": "Acquisition year"
+            },
+            "pos": 60,
+            "terms": [],
+            "total": 105
+        },
+        "hanging": {
+            "displayed_as": {
+                "fr": "Œuvres exposées",
+                "en": "Artworks exhibited"
+            },
+            "pos": 80,
+            "terms": [],
+            "total": 6
+        },
+        "with_text_notes": {
+            "displayed_as": {
+                "fr": "Avec notice",
+                "en": "With text notes"
+            },
+            "pos": 90,
+            "terms": [],
+            "total": 2
+        },
+        "gender": {
+            "displayed_as": {
+                "fr": "Genre",
+                "en": "Gender"
+            },
+            "pos": 100,
+            "terms": [],
+            "total": 4
+        },
+        "withimage": {
+            "displayed_as": {
+                "fr": "Avec/sans image",
+                "en": "With/without image"
+            },
+            "pos": null,
+            "checkbox": true,
+            "terms": [],
+            "total": 13820
+        }
+    },
+    "results": [
+        {
+            "_id": "180000000160264",
+            "highlight": null,
+            "_source": {
+                "ua": {
+                    "artwork": {
+                        "_id": "180000000160264",
+                        "type": "individual",
+                        "title_notice": "St Paul",
+                        "title_list": "St Paul",
+                        "collection_department_label_case": "none",
+                        "copyright": "© droits réservés",
+                        "author_in_common": "a",
+                        "collection": "",
+                        "acquisition_mode": "Don",
+                        "date_creation": "vers 1935",
+                        "acquisition_year": 2014.0,
+                        "domain": "Photographie",
+                        "domain_leaf": "Photographie [sans précision]",
+                        "domain_deno_for_grid": "Photographie",
+                        "domain_description_mst": "Négatif gélatino argentique sur support souple nitrate",
+                        "comments": "",
+                        "authors_notice": "Rémy DUVAL",
+                        "authors_list": "DUVAL Rémy",
+                        "dimensions": "6 x 6 cm",
+                        "acquisition": "Don de la Société des amis du musée d'art moderne de la Ville de Paris en 2014",
+                        "inventory": "AMVP-2015-715",
+                        "inventory_for_grid": "AMVP-2015-715",
+                        "rights_management_leaf": "..Type de droits non identifié",
+                        "default_tooltip_ua_description": "Négatif gélatino argentique sur support souple nitrate",
+                        "authors_name_complement": "",
+                        "authors_site": "",
+                        "authors_documents": "",
+                        "authors_video": "",
+                        "authors_nationality": "",
+                        "authors_birth_death": "1907, Rouen (Seine-Maritime, France) - 1984, Paris (France)",
+                        "live_and_work": "",
+                        "author_bibliography": "",
+                        "nb_images": 1.0,
+                        "medias": [
+                            {
+                                "file_name": "3Y/20/3Y20301.JPG",
+                                "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                                "max_width": 961.0,
+                                "max_height": 1000.0,
+                                "box_width": 245.0,
+                                "box_height": 255.0,
+                                "_id": "99900000604894",
+                                "type": "image",
+                                "photographer": "Paris Musées/Musée d'art moderne de la ville de Paris",
+                                "copyright": "© droits réservés",
+                                "header_aggregate": false
+                            }
+                        ],
+                        "slug": "remy-duval-st-paul-180000000160264"
+                    },
+                    "medias": [
+                        {
+                            "file_name": "3Y/20/3Y20301.JPG",
+                            "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                            "max_width": 961.0,
+                            "max_height": 1000.0,
+                            "box_width": 245.0,
+                            "box_height": 255.0,
+                            "_id": "99900000604894",
+                            "type": "image",
+                            "photographer": "Paris Musées/Musée d'art moderne de la ville de Paris",
+                            "copyright": "© droits réservés",
+                            "header_aggregate": false
+                        }
+                    ],
+                    "authors": [
+                        {
+                            "type": "artiste",
+                            "_id": "9000000000071741",
+                            "name": {
+                                "notice": "Rémy Duval",
+                                "notice2": "Rémy DUVAL",
+                                "list": "DUVAL Rémy"
+                            },
+                            "name_complement": "",
+                            "gender": "masculin"
+                        }
+                    ]
+                },
+                "related": null
+            }
+        },
+        {
+            "_id": "180000000098317",
+            "highlight": null,
+            "_source": {
+                "ua": {
+                    "artwork": {
+                        "_id": "180000000098317",
+                        "type": "individual",
+                        "title_notice": "(Sans titre)",
+                        "title_list": "(Sans titre)",
+                        "collection_department_label_case": "none",
+                        "dimensions_without_margin": "20,7 x 27,6",
+                        "copyright": "© Kiyoko Lerner / Adagp, Paris",
+                        "author_in_common": "a",
+                        "collection": "",
+                        "acquisition_mode": "Don",
+                        "date_creation": "vers 1970",
+                        "acquisition_year": 2014.0,
+                        "domain": "Photographie",
+                        "domain_leaf": "Photographie [sans précision]",
+                        "domain_deno_for_grid": "Photographie",
+                        "domain_description_mst": "Epreuve gélatino-argentique",
+                        "comments": "",
+                        "authors_notice": "Nathan LERNER",
+                        "authors_list": "LERNER Nathan",
+                        "dimensions": "27,6 x 34,2 cm\n20,7 x 27,6 cm (hors marge)",
+                        "acquisition": "Don de Mme Kiyoko Lerner en 2014",
+                        "inventory": "AMVP 4086",
+                        "inventory_for_grid": "AMVP 4086",
+                        "rights_management_leaf": "Adagp (Paris)",
+                        "default_tooltip_ua_description": "Epreuve gélatino-argentique",
+                        "authors_name_complement": "",
+                        "authors_site": "",
+                        "authors_documents": "",
+                        "authors_video": "",
+                        "authors_nationality": "",
+                        "authors_birth_death": "1913, Chicago (Illinois, États-Unis) - 1997, Chicago (Illinois, États-Unis)",
+                        "live_and_work": "",
+                        "author_bibliography": "",
+                        "nb_images": 1.0,
+                        "medias": [
+                            {
+                                "file_name": "3Y/15/3Y15992.jpg",
+                                "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                                "max_width": 1000.0,
+                                "max_height": 773.0,
+                                "box_width": 330.0,
+                                "box_height": 255.0,
+                                "_id": "99900000580040",
+                                "type": "image",
+                                "photographer": "Victoria Viannet/Azentis Technology",
+                                "copyright": "© Kiyoko Lerner / Adagp, Paris",
+                                "header_aggregate": false
+                            }
+                        ],
+                        "slug": "nathan-lerner-sans-titre-180000000098317"
+                    },
+                    "medias": [
+                        {
+                            "file_name": "3Y/15/3Y15992.jpg",
+                            "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                            "max_width": 1000.0,
+                            "max_height": 773.0,
+                            "box_width": 330.0,
+                            "box_height": 255.0,
+                            "_id": "99900000580040",
+                            "type": "image",
+                            "photographer": "Victoria Viannet/Azentis Technology",
+                            "copyright": "© Kiyoko Lerner / Adagp, Paris",
+                            "header_aggregate": false
+                        }
+                    ],
+                    "authors": [
+                        {
+                            "type": "artiste",
+                            "_id": "9000000000066542",
+                            "name": {
+                                "notice": "Nathan Lerner",
+                                "notice2": "Nathan LERNER",
+                                "list": "LERNER Nathan"
+                            },
+                            "name_complement": "",
+                            "gender": "masculin"
+                        }
+                    ]
+                },
+                "related": null
+            }
+        },
+        {
+            "_id": "180000000005665",
+            "highlight": null,
+            "_source": {
+                "ua": {
+                    "artwork": {
+                        "_id": "180000000005665",
+                        "type": "individual",
+                        "title_notice": "Hydre",
+                        "title_list": "Hydre",
+                        "collection_department_label_case": "none",
+                        "dimensions_without_margin": "54 x 38,4",
+                        "tirage": "Epreuve d'artiste",
+                        "inscriptions": "S.B.DR.: G. Richier\nN.B.G.: Epreuve d'artiste",
+                        "expositions_without_current": "\u003cul\u003e\u003cli\u003eAuf der Spur der Erfindung-Bildhauer zeichnen : Düsseldorf (Allemagne), Kunstakademie Düsseldorf, 05 avril 2014-10 août 2014\u003c/li\u003e\n\u003cli\u003eGermaine Richier : Antibes (France), Musée Picasso, 05 octobre 2019-26 janvier 2020 // La Haye (Pays-Bas), Museum Beelden aan Zee, 14 mars 2020-06 septembre 2020\u003c/li\u003e\u003c/ul\u003e",
+                        "expositions": "\u003cul\u003e\u003cli\u003eAuf der Spur der Erfindung-Bildhauer zeichnen : Düsseldorf (Allemagne), Kunstakademie Düsseldorf, 05 avril 2014-10 août 2014\u003c/li\u003e\n\u003cli\u003eGermaine Richier : Antibes (France), Musée Picasso, 05 octobre 2019-26 janvier 2020 // La Haye (Pays-Bas), Museum Beelden aan Zee, 14 mars 2020-06 septembre 2020\u003c/li\u003e\u003c/ul\u003e",
+                        "bibliography": "\u003cul\u003e\u003cli\u003eGermaine Richier la magicienne. - Musée Picasso, 2019 ; Editions Hazan, 2019\nISBN 9782754111133\n- Reprod p.37\u003c/li\u003e\u003c/ul\u003e",
+                        "copyright": "© Adagp, Paris",
+                        "author_in_common": "a",
+                        "collection": "",
+                        "acquisition_mode": "Achat",
+                        "date_creation": "s.d.",
+                        "acquisition_year": 1965.0,
+                        "domain": "Estampe",
+                        "domain_leaf": "Estampe",
+                        "domain_deno_for_grid": "Estampe",
+                        "domain_description_mst": "Gravure",
+                        "comments": "",
+                        "authors_notice": "Germaine RICHIER",
+                        "authors_list": "RICHIER Germaine",
+                        "dimensions": "66 x 52 cm\n54 x 38,4 cm (hors marge)",
+                        "acquisition": "Achat en 1965",
+                        "inventory": "AME 585",
+                        "inventory_for_grid": "AME 585",
+                        "rights_management_leaf": "Adagp (Paris)",
+                        "default_tooltip_ua_description": "Gravure",
+                        "authors_name_complement": "",
+                        "authors_site": "\u003ca href='https://awarewomenartists.com/artiste/germaine-richier/' rel='link' target='_new'\u003eNotice de l'artiste sur le site d'AWARE\u003c/a\u003e",
+                        "authors_documents": "",
+                        "authors_video": "",
+                        "authors_nationality": "",
+                        "authors_birth_death": "1902, Grans (Bouches-du-Rhône, France) - 1959, Montpellier (Hérault, France)",
+                        "live_and_work": "",
+                        "author_bibliography": "",
+                        "nb_images": 2.0,
+                        "medias": [
+                            {
+                                "file_name": "3Y/07/3Y07714.jpg",
+                                "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                                "max_width": 712.0,
+                                "max_height": 1000.0,
+                                "box_width": 182.0,
+                                "box_height": 255.0,
+                                "_id": "90000000358725",
+                                "type": "image",
+                                "photographer": "Eric Emo/Parisienne de Photographie",
+                                "copyright": "© Adagp, Paris",
+                                "header_aggregate": false
+                            },
+                            {
+                                "file_name": "3Y/07/3Y07713.jpg",
+                                "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                                "max_width": 704.0,
+                                "max_height": 1000.0,
+                                "box_width": 180.0,
+                                "box_height": 255.0,
+                                "_id": "90000000358724",
+                                "type": "image",
+                                "photographer": "Eric Emo/Parisienne de Photographie",
+                                "copyright": "© Adagp, Paris",
+                                "header_aggregate": false
+                            }
+                        ],
+                        "slug": "germaine-richier-hydre-180000000005665"
+                    },
+                    "medias": [
+                        {
+                            "file_name": "3Y/07/3Y07714.jpg",
+                            "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                            "max_width": 712.0,
+                            "max_height": 1000.0,
+                            "box_width": 182.0,
+                            "box_height": 255.0,
+                            "_id": "90000000358725",
+                            "type": "image",
+                            "photographer": "Eric Emo/Parisienne de Photographie",
+                            "copyright": "© Adagp, Paris",
+                            "header_aggregate": false
+                        },
+                        {
+                            "file_name": "3Y/07/3Y07713.jpg",
+                            "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                            "max_width": 704.0,
+                            "max_height": 1000.0,
+                            "box_width": 180.0,
+                            "box_height": 255.0,
+                            "_id": "90000000358724",
+                            "type": "image",
+                            "photographer": "Eric Emo/Parisienne de Photographie",
+                            "copyright": "© Adagp, Paris",
+                            "header_aggregate": false
+                        }
+                    ],
+                    "authors": [
+                        {
+                            "type": "artiste",
+                            "_id": "9000000000067029",
+                            "name": {
+                                "notice": "Germaine Richier",
+                                "notice2": "Germaine RICHIER",
+                                "list": "RICHIER Germaine"
+                            },
+                            "name_complement": "",
+                            "gender": "féminin"
+                        }
+                    ]
+                },
+                "related": null
+            }
+        },
+        {
+            "_id": "180000000161098",
+            "highlight": null,
+            "_source": {
+                "ua": {
+                    "artwork": {
+                        "_id": "180000000161098",
+                        "type": "individual",
+                        "title_notice": "Marg. Dieulafe",
+                        "title_list": "Marg. Dieulafe",
+                        "collection_department_label_case": "none",
+                        "copyright": "© droits réservés",
+                        "author_in_common": "a",
+                        "collection": "",
+                        "acquisition_mode": "Don",
+                        "date_creation": "vers 1935",
+                        "acquisition_year": 2014.0,
+                        "domain": "Photographie",
+                        "domain_leaf": "Photographie [sans précision]",
+                        "domain_deno_for_grid": "Photographie",
+                        "domain_description_mst": "Négatif gélatino argentique sur support souple nitrate",
+                        "comments": "",
+                        "authors_notice": "Rémy DUVAL",
+                        "authors_list": "DUVAL Rémy",
+                        "dimensions": "13 x 18 cm",
+                        "acquisition": "Don de la Société des amis du musée d'art moderne de la Ville de Paris en 2014",
+                        "inventory": "AMVP-2015-1025",
+                        "inventory_for_grid": "AMVP-2015-1025",
+                        "rights_management_leaf": "..Type de droits non identifié",
+                        "default_tooltip_ua_description": "Négatif gélatino argentique sur support souple nitrate",
+                        "authors_name_complement": "",
+                        "authors_site": "",
+                        "authors_documents": "",
+                        "authors_video": "",
+                        "authors_nationality": "",
+                        "authors_birth_death": "1907, Rouen (Seine-Maritime, France) - 1984, Paris (France)",
+                        "live_and_work": "",
+                        "author_bibliography": "",
+                        "nb_images": 1.0,
+                        "medias": [
+                            {
+                                "file_name": "3Y/20/3Y20578.JPG",
+                                "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                                "max_width": 1000.0,
+                                "max_height": 723.0,
+                                "box_width": 353.0,
+                                "box_height": 255.0,
+                                "_id": "99900000605171",
+                                "type": "image",
+                                "photographer": "Paris Musées/Musée d'art moderne de la ville de Paris",
+                                "copyright": "© droits réservés",
+                                "header_aggregate": false
+                            }
+                        ],
+                        "slug": "remy-duval-marg-dieulafe-180000000161098"
+                    },
+                    "medias": [
+                        {
+                            "file_name": "3Y/20/3Y20578.JPG",
+                            "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                            "max_width": 1000.0,
+                            "max_height": 723.0,
+                            "box_width": 353.0,
+                            "box_height": 255.0,
+                            "_id": "99900000605171",
+                            "type": "image",
+                            "photographer": "Paris Musées/Musée d'art moderne de la ville de Paris",
+                            "copyright": "© droits réservés",
+                            "header_aggregate": false
+                        }
+                    ],
+                    "authors": [
+                        {
+                            "type": "artiste",
+                            "_id": "9000000000071741",
+                            "name": {
+                                "notice": "Rémy Duval",
+                                "notice2": "Rémy DUVAL",
+                                "list": "DUVAL Rémy"
+                            },
+                            "name_complement": "",
+                            "gender": "masculin"
+                        }
+                    ]
+                },
+                "related": null
+            }
+        },
+        {
+            "_id": "180000000185109",
+            "highlight": null,
+            "_source": {
+                "ua": {
+                    "artwork": {
+                        "_id": "180000000185109",
+                        "type": "individual",
+                        "title_notice": "Deauville",
+                        "title_list": "Deauville",
+                        "collection_department_label_case": "none",
+                        "copyright": "© droits réservés",
+                        "author_in_common": "a",
+                        "collection": "",
+                        "acquisition_mode": "Don",
+                        "date_creation": "vers 1935",
+                        "acquisition_year": 2014.0,
+                        "domain": "Photographie",
+                        "domain_leaf": "Photographie [sans précision]",
+                        "domain_deno_for_grid": "Photographie",
+                        "domain_description_mst": "Tirage gélatino-argentique sur support souple nitrate",
+                        "comments": "",
+                        "authors_notice": "Rémy DUVAL",
+                        "authors_list": "DUVAL Rémy",
+                        "dimensions": "6 x 6 cm",
+                        "acquisition": "Don de la Société des amis du musée d'art moderne de la Ville de Paris en 2014",
+                        "inventory": "AMVP-2015-3015",
+                        "inventory_for_grid": "AMVP-2015-3015",
+                        "rights_management_leaf": "..Type de droits non identifié",
+                        "default_tooltip_ua_description": "Tirage gélatino-argentique sur support souple nitrate",
+                        "authors_name_complement": "",
+                        "authors_site": "",
+                        "authors_documents": "",
+                        "authors_video": "",
+                        "authors_nationality": "",
+                        "authors_birth_death": "1907, Rouen (Seine-Maritime, France) - 1984, Paris (France)",
+                        "live_and_work": "",
+                        "author_bibliography": "",
+                        "nb_images": 1.0,
+                        "medias": [
+                            {
+                                "file_name": "3Y/22/3Y22003.JPG",
+                                "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                                "max_width": 960.0,
+                                "max_height": 1000.0,
+                                "box_width": 245.0,
+                                "box_height": 255.0,
+                                "_id": "99900000606594",
+                                "type": "image",
+                                "photographer": "Paris Musées/Musée d'art moderne de la ville de Paris",
+                                "copyright": "© droits réservés",
+                                "header_aggregate": false
+                            }
+                        ],
+                        "slug": "remy-duval-deauville-180000000185109"
+                    },
+                    "medias": [
+                        {
+                            "file_name": "3Y/22/3Y22003.JPG",
+                            "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                            "max_width": 960.0,
+                            "max_height": 1000.0,
+                            "box_width": 245.0,
+                            "box_height": 255.0,
+                            "_id": "99900000606594",
+                            "type": "image",
+                            "photographer": "Paris Musées/Musée d'art moderne de la ville de Paris",
+                            "copyright": "© droits réservés",
+                            "header_aggregate": false
+                        }
+                    ],
+                    "authors": [
+                        {
+                            "type": "artiste",
+                            "_id": "9000000000071741",
+                            "name": {
+                                "notice": "Rémy Duval",
+                                "notice2": "Rémy DUVAL",
+                                "list": "DUVAL Rémy"
+                            },
+                            "name_complement": "",
+                            "gender": "masculin"
+                        }
+                    ]
+                },
+                "related": null
+            }
+        },
+        {
+            "_id": "180000000006689",
+            "highlight": null,
+            "_source": {
+                "ua": {
+                    "artwork": {
+                        "_id": "180000000006689",
+                        "type": "individual",
+                        "title_list": "(Sans titre)",
+                        "collection_department_label_case": "none",
+                        "inscriptions": "S.D.R.: Kolibal 72",
+                        "expositions_without_current": "\u003cul\u003e\u003cli\u003ePrague - Bratislava, d'une génération l'autre, 3 avril - 21 juin 1992, Musée d'Art Moderne de la Ville de Paris\u003c/li\u003e\u003c/ul\u003e",
+                        "expositions": "\u003cul\u003e\u003cli\u003ePrague - Bratislava, d'une génération l'autre, 3 avril - 21 juin 1992, Musée d'Art Moderne de la Ville de Paris\u003c/li\u003e\u003c/ul\u003e",
+                        "copyright": "©  Stanislav Kolibal",
+                        "author_in_common": "a",
+                        "collection": "",
+                        "acquisition_mode": "Achat",
+                        "date_creation": "1972",
+                        "acquisition_year": 1992.0,
+                        "domain": "Dessin",
+                        "domain_leaf": "Dessin [sans précision]",
+                        "domain_deno_for_grid": "Dessin",
+                        "domain_description_mst": "Stylo à bille sur papier Fabriano",
+                        "comments": "",
+                        "authors_notice": "Stanislav KOLIBAL",
+                        "authors_list": "KOLIBAL Stanislav",
+                        "dimensions": "43,5 x 31 cm",
+                        "acquisition": "Achat à l'artiste en 1992",
+                        "inventory": "AMD 1353",
+                        "inventory_for_grid": "AMD 1353",
+                        "title_notice": "",
+                        "rights_management_leaf": "..Droits directs par l'artiste",
+                        "default_tooltip_ua_description": "Stylo à bille sur papier Fabriano",
+                        "authors_name_complement": "",
+                        "authors_site": "",
+                        "authors_documents": "",
+                        "authors_video": "",
+                        "authors_nationality": "",
+                        "authors_birth_death": "1925, Orlova (Tchécoslovaquie)",
+                        "live_and_work": "",
+                        "author_bibliography": "",
+                        "nb_images": 1.0,
+                        "medias": [
+                            {
+                                "file_name": "3Y/04/3Y04618.jpg",
+                                "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                                "max_width": 1000.0,
+                                "max_height": 722.0,
+                                "box_width": 353.0,
+                                "box_height": 255.0,
+                                "_id": "90000000177254",
+                                "type": "image",
+                                "photographer": "Eric Emo/Parisienne de Photographie",
+                                "copyright": "©  Stanislav Kolibal",
+                                "header_aggregate": false
+                            }
+                        ],
+                        "slug": "stanislav-kolibal-180000000006689"
+                    },
+                    "medias": [
+                        {
+                            "file_name": "3Y/04/3Y04618.jpg",
+                            "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                            "max_width": 1000.0,
+                            "max_height": 722.0,
+                            "box_width": 353.0,
+                            "box_height": 255.0,
+                            "_id": "90000000177254",
+                            "type": "image",
+                            "photographer": "Eric Emo/Parisienne de Photographie",
+                            "copyright": "©  Stanislav Kolibal",
+                            "header_aggregate": false
+                        }
+                    ],
+                    "authors": [
+                        {
+                            "type": "artiste",
+                            "_id": "9000000000067764",
+                            "name": {
+                                "notice": "Stanislav Kolibal",
+                                "notice2": "Stanislav KOLIBAL",
+                                "list": "KOLIBAL Stanislav"
+                            },
+                            "name_complement": "",
+                            "gender": "masculin"
+                        }
+                    ]
+                },
+                "related": null
+            }
+        },
+        {
+            "_id": "180000000059745",
+            "highlight": null,
+            "_source": {
+                "ua": {
+                    "artwork": {
+                        "_id": "180000000059745",
+                        "ensemble_id": 157.0,
+                        "nb_elements": "10",
+                        "related": [
+                            "180000000004768",
+                            "180000000059751",
+                            "180000000059748",
+                            "180000000059745",
+                            "180000000059741",
+                            "180000000059738",
+                            "180000000059732",
+                            "180000000059754",
+                            "180000000059735",
+                            "180000000059729"
+                        ],
+                        "type": "separable",
+                        "recap_title": "Aux nourritures terrestres",
+                        "recap_nature": "Album collectif",
+                        "recap_number": "157",
+                        "title_list": "(Sans titre)",
+                        "collection_department_label_case": "none",
+                        "expositions_without_current": "\u003cul\u003e\u003cli\u003eL'art en guerre - France 1938-1947\nDe Picasso à Dubuffet : Paris (France), Musée d'art moderne de la Ville de Paris, 12 octobre 2012-17 février 2013\u003c/li\u003e\n\u003cli\u003eL'Art en guerre : Bilbao (Espagne), Guggenheim Museo Bilbao, 19 mars 2013-08 septembre 2013\u003c/li\u003e\u003c/ul\u003e",
+                        "expositions": "\u003cul\u003e\u003cli\u003eL'art en guerre - France 1938-1947\nDe Picasso à Dubuffet : Paris (France), Musée d'art moderne de la Ville de Paris, 12 octobre 2012-17 février 2013\u003c/li\u003e\n\u003cli\u003eL'Art en guerre : Bilbao (Espagne), Guggenheim Museo Bilbao, 19 mars 2013-08 septembre 2013\u003c/li\u003e\u003c/ul\u003e",
+                        "copyright": "© Adagp, Paris, Domaine public",
+                        "author_in_common": "a",
+                        "collection": "",
+                        "acquisition_mode": "Achat en vente publique",
+                        "recap_copyright": "© Adagp, Paris, © Pracusa S.A., © Adagp, Paris, Domaine public, © Adagp, Paris",
+                        "date_creation": "1950",
+                        "acquisition_year": 1989.0,
+                        "domain": "Estampe",
+                        "domain_leaf": "Estampe",
+                        "domain_deno_for_grid": "Estampe",
+                        "domain_description_mst": "Lithographie sur papier d'Arches",
+                        "comments": "",
+                        "recap_description": "Album composé de dix lithographies de Jean Arp, Sonia Delaunay, Alberto Magnelli et Sophie Taeuber-Arp",
+                        "recap_multi": "yes",
+                        "recap_authors": "ARP Jean (ARP Hans, dit), DELAUNAY Sonia (STERN TERK Sarah Sophie, dit), ARP Jean (ARP Hans, dit), MAGNELLI Alberto, TAEUBER-ARP Sophie (TAEUBER Sophie-Henriette, dit), ARP Jean (ARP Hans, dit), DELAUNAY Sonia (STERN TERK Sarah Sophie, dit), MAGNELLI Alberto, ARP Jean (ARP Hans, dit), MAGNELLI Alberto, ARP Jean (ARP Hans, dit), TAEUBER-ARP Sophie (TAEUBER Sophie-Henriette, dit), ARP Jean (ARP Hans, dit), TAEUBER-ARP Sophie (TAEUBER Sophie-Henriette, dit), MAGNELLI Alberto",
+                        "authors_notice": "Jean ARP (Hans ARP, dit), Sophie TAEUBER-ARP (Sophie-Henriette TAEUBER, dit), Alberto MAGNELLI",
+                        "authors_list": "ARP Jean (ARP Hans, dit), TAEUBER-ARP Sophie (TAEUBER Sophie-Henriette, dit), MAGNELLI Alberto",
+                        "dimensions": "38 x 28 cm",
+                        "acquisition": "Achat en vente publique Vente Tzara en 1989",
+                        "inventory": "AME 1314",
+                        "inventory_for_grid": "AME 1314",
+                        "title_notice": "",
+                        "rights_management_leaf": "Adagp (Paris)",
+                        "default_tooltip_ua_description": "Lithographie sur papier d'Arches",
+                        "authors_name_complement": "",
+                        "authors_birth_death": "",
+                        "authors_live_work": "",
+                        "recap_name_complement": "",
+                        "recap_birth_death": "",
+                        "recap_live_work": "",
+                        "nb_images": 1.0,
+                        "medias": [
+                            {
+                                "file_name": "3Y/08/3Y08012.jpg",
+                                "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                                "max_width": 736.0,
+                                "max_height": 1000.0,
+                                "box_width": 188.0,
+                                "box_height": 255.0,
+                                "_id": "90000000359021",
+                                "type": "image",
+                                "photographer": "Eric Emo/Parisienne de Photographie",
+                                "copyright": "© Adagp, Paris, Domaine public",
+                                "header_aggregate": false
+                            }
+                        ],
+                        "recap_image_unavailable": "reproduction_in_progress",
+                        "slug": "jean-arp-hans-arp-dit-sophie-taeuber-arp-sophie-henriette-taeuber-dit-alberto-magnelli-180000000059745"
+                    },
+                    "medias": [
+                        {
+                            "file_name": "3Y/08/3Y08012.jpg",
+                            "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                            "max_width": 736.0,
+                            "max_height": 1000.0,
+                            "box_width": 188.0,
+                            "box_height": 255.0,
+                            "_id": "90000000359021",
+                            "type": "image",
+                            "photographer": "Eric Emo/Parisienne de Photographie",
+                            "copyright": "© Adagp, Paris, Domaine public",
+                            "header_aggregate": false
+                        }
+                    ],
+                    "authors": [
+                        {
+                            "type": "artiste",
+                            "_id": "9000000000065435",
+                            "name": {
+                                "notice": "Jean Arp (Hans Arp, dit)",
+                                "notice2": "Jean ARP (Hans ARP, dit)",
+                                "list": "ARP Jean (ARP Hans, dit)"
+                            },
+                            "name_complement": "",
+                            "gender": "masculin"
+                        },
+                        {
+                            "type": "artiste",
+                            "_id": "9000000000067240",
+                            "name": {
+                                "notice": "Sophie Taeuber-Arp (Sophie-Henriette Taeuber, dit)",
+                                "notice2": "Sophie TAEUBER-ARP (Sophie-Henriette TAEUBER, dit)",
+                                "list": "TAEUBER-ARP Sophie (TAEUBER Sophie-Henriette, dit)"
+                            },
+                            "name_complement": "",
+                            "gender": "féminin"
+                        },
+                        {
+                            "type": "artiste",
+                            "_id": "9000000000066610",
+                            "name": {
+                                "notice": "Alberto Magnelli",
+                                "notice2": "Alberto MAGNELLI",
+                                "list": "MAGNELLI Alberto"
+                            },
+                            "name_complement": "",
+                            "gender": "masculin"
+                        }
+                    ]
+                },
+                "related": null
+            }
+        },
+        {
+            "_id": "180000000155284",
+            "highlight": null,
+            "_source": {
+                "ua": {
+                    "artwork": {
+                        "_id": "180000000155284",
+                        "type": "individual",
+                        "title_notice": "Gerhard Richter",
+                        "title_list": "Gerhard Richter",
+                        "collection_department_label_case": "none",
+                        "dimensions_without_margin": "39,4 x 26",
+                        "expositions_without_current": "\u003cul\u003e\u003cli\u003eBenjamin Katz : Musée d'art moderne de la Ville de Paris,Paris (France), 30 septembre 2016-31 décembre 2016\u003c/li\u003e\u003c/ul\u003e",
+                        "expositions": "\u003cul\u003e\u003cli\u003eBenjamin Katz : Musée d'art moderne de la Ville de Paris,Paris (France), 30 septembre 2016-31 décembre 2016\u003c/li\u003e\u003c/ul\u003e",
+                        "copyright": "© Adagp, Paris",
+                        "author_in_common": "a",
+                        "collection": "",
+                        "acquisition_mode": "Don",
+                        "date_creation": "s.d.",
+                        "acquisition_year": 2016.0,
+                        "domain": "Photographie",
+                        "domain_leaf": "Photographie [sans précision]",
+                        "domain_deno_for_grid": "Photographie",
+                        "domain_description_mst": "Epreuve gélatino-argentique",
+                        "comments": "",
+                        "authors_notice": "Benjamin KATZ",
+                        "authors_list": "KATZ Benjamin",
+                        "dimensions": "40,5 x 30,5 cm\n39,4 x 26 cm (hors marge)",
+                        "acquisition": "Don en 2016\nde la Société des amis du musée d'art moderne de la Ville de Paris",
+                        "inventory": "AMVP-2016-194",
+                        "inventory_for_grid": "AMVP-2016-194",
+                        "rights_management_leaf": "Adagp (Paris)",
+                        "default_tooltip_ua_description": "Epreuve gélatino-argentique",
+                        "authors_name_complement": "",
+                        "authors_site": "",
+                        "authors_documents": "",
+                        "authors_video": "",
+                        "authors_nationality": "",
+                        "authors_birth_death": "1939, Anvers (Belgique)",
+                        "live_and_work": "",
+                        "author_bibliography": "",
+                        "nb_images": 1.0,
+                        "medias": [
+                            {
+                                "file_name": "3Y/14/3Y14243.jpg",
+                                "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                                "max_width": 670.0,
+                                "max_height": 1000.0,
+                                "box_width": 171.0,
+                                "box_height": 255.0,
+                                "_id": "90000000508203",
+                                "type": "image",
+                                "photographer": "Julien Vidal/Parisienne de Photographie",
+                                "copyright": "© Adagp, Paris",
+                                "header_aggregate": false
+                            }
+                        ],
+                        "slug": "benjamin-katz-gerhard-richter-180000000155284"
+                    },
+                    "medias": [
+                        {
+                            "file_name": "3Y/14/3Y14243.jpg",
+                            "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                            "max_width": 670.0,
+                            "max_height": 1000.0,
+                            "box_width": 171.0,
+                            "box_height": 255.0,
+                            "_id": "90000000508203",
+                            "type": "image",
+                            "photographer": "Julien Vidal/Parisienne de Photographie",
+                            "copyright": "© Adagp, Paris",
+                            "header_aggregate": false
+                        }
+                    ],
+                    "authors": [
+                        {
+                            "type": "artiste",
+                            "_id": "180000000136730",
+                            "name": {
+                                "notice": "Benjamin Katz",
+                                "notice2": "Benjamin KATZ",
+                                "list": "KATZ Benjamin"
+                            },
+                            "name_complement": "",
+                            "gender": "masculin"
+                        }
+                    ]
+                },
+                "related": null
+            }
+        },
+        {
+            "_id": "180000000186624",
+            "highlight": null,
+            "_source": {
+                "ua": {
+                    "artwork": {
+                        "_id": "180000000186624",
+                        "type": "individual",
+                        "title_notice": "Sans titre",
+                        "title_list": "Sans titre",
+                        "collection_department_label_case": "none",
+                        "copyright": "© droits réservés",
+                        "author_in_common": "a",
+                        "collection": "",
+                        "acquisition_mode": "Don",
+                        "date_creation": "vers 1935",
+                        "acquisition_year": 2014.0,
+                        "domain": "Photographie",
+                        "domain_leaf": "Photographie [sans précision]",
+                        "domain_deno_for_grid": "Photographie",
+                        "domain_description_mst": "Tirage contact",
+                        "comments": "",
+                        "authors_notice": "Rémy DUVAL",
+                        "authors_list": "DUVAL Rémy",
+                        "dimensions": "6 x 6 cm",
+                        "acquisition": "Don de la Société des amis du musée d'art moderne de la Ville de Paris en 2014",
+                        "inventory": "AMVP-2015-3310",
+                        "inventory_for_grid": "AMVP-2015-3310",
+                        "rights_management_leaf": "..Type de droits non identifié",
+                        "default_tooltip_ua_description": "Tirage contact",
+                        "authors_name_complement": "",
+                        "authors_site": "",
+                        "authors_documents": "",
+                        "authors_video": "",
+                        "authors_nationality": "",
+                        "authors_birth_death": "1907, Rouen (Seine-Maritime, France) - 1984, Paris (France)",
+                        "live_and_work": "",
+                        "author_bibliography": "",
+                        "nb_images": 1.0,
+                        "medias": [
+                            {
+                                "file_name": "3Y/15/3Y15703.jpg",
+                                "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                                "max_width": 720.0,
+                                "max_height": 1000.0,
+                                "box_width": 184.0,
+                                "box_height": 255.0,
+                                "_id": "99900000560660",
+                                "type": "image",
+                                "photographer": "Aurélie Dupuis/Azentis Technology",
+                                "copyright": "© droits réservés",
+                                "header_aggregate": false
+                            }
+                        ],
+                        "slug": "remy-duval-sans-titre-180000000186624"
+                    },
+                    "medias": [
+                        {
+                            "file_name": "3Y/15/3Y15703.jpg",
+                            "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                            "max_width": 720.0,
+                            "max_height": 1000.0,
+                            "box_width": 184.0,
+                            "box_height": 255.0,
+                            "_id": "99900000560660",
+                            "type": "image",
+                            "photographer": "Aurélie Dupuis/Azentis Technology",
+                            "copyright": "© droits réservés",
+                            "header_aggregate": false
+                        }
+                    ],
+                    "authors": [
+                        {
+                            "type": "artiste",
+                            "_id": "9000000000071741",
+                            "name": {
+                                "notice": "Rémy Duval",
+                                "notice2": "Rémy DUVAL",
+                                "list": "DUVAL Rémy"
+                            },
+                            "name_complement": "",
+                            "gender": "masculin"
+                        }
+                    ]
+                },
+                "related": null
+            }
+        },
+        {
+            "_id": "180000000171189",
+            "highlight": null,
+            "_source": {
+                "ua": {
+                    "artwork": {
+                        "_id": "180000000171189",
+                        "type": "individual",
+                        "title_notice": "Musée d'art moderne de la ville de Paris",
+                        "title_list": "Musée d'art moderne de la ville de Paris",
+                        "collection_department_label_case": "none",
+                        "tirage_photo": "Tirage d'époque",
+                        "realisation_location": "Paris",
+                        "dimensions_without_margin": "17,7 x 26,8",
+                        "copyright": "©  Bernard Plossu",
+                        "author_in_common": "a",
+                        "collection": "",
+                        "acquisition_mode": "Don",
+                        "date_creation": "1978 - 1985",
+                        "acquisition_year": 2017.0,
+                        "domain": "Photographie",
+                        "domain_leaf": "Photographie [sans précision]",
+                        "domain_deno_for_grid": "Photographie",
+                        "domain_description_mst": "Epreuve gélatino-argentique",
+                        "comments": "",
+                        "authors_notice": "Bernard PLOSSU",
+                        "authors_list": "PLOSSU Bernard",
+                        "dimensions": "24 x 30,6 cm\n17,7 x 26,8 cm (hors marge)",
+                        "acquisition": "Don de l'artiste en 2017",
+                        "inventory": "AMVP-2017-281",
+                        "inventory_for_grid": "AMVP-2017-281",
+                        "rights_management_leaf": "..Droits directs par l'artiste",
+                        "default_tooltip_ua_description": "Epreuve gélatino-argentique",
+                        "authors_name_complement": "",
+                        "authors_site": "\u003ca href='http://www.documentsdartistes.org/plossu' rel='link' target='_new'\u003eSite \"documents d'artistes\" (DDA)\u003c/a\u003e",
+                        "authors_documents": "",
+                        "authors_video": "",
+                        "authors_nationality": "",
+                        "authors_birth_death": "1945, Da Lat (Vietnam)",
+                        "live_and_work": "",
+                        "author_bibliography": "",
+                        "nb_images": 1.0,
+                        "medias": [
+                            {
+                                "file_name": "3Y/14/3Y14872.jpg",
+                                "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                                "max_width": 1000.0,
+                                "max_height": 668.0,
+                                "box_width": 382.0,
+                                "box_height": 255.0,
+                                "_id": "90000000533489",
+                                "type": "image",
+                                "photographer": "Julien Vidal/Parisienne de Photographie",
+                                "copyright": "©  Bernard Plossu",
+                                "header_aggregate": false
+                            }
+                        ],
+                        "slug": "bernard-plossu-musee-d-art-moderne-de-la-ville-de-paris-180000000171189"
+                    },
+                    "medias": [
+                        {
+                            "file_name": "3Y/14/3Y14872.jpg",
+                            "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                            "max_width": 1000.0,
+                            "max_height": 668.0,
+                            "box_width": 382.0,
+                            "box_height": 255.0,
+                            "_id": "90000000533489",
+                            "type": "image",
+                            "photographer": "Julien Vidal/Parisienne de Photographie",
+                            "copyright": "©  Bernard Plossu",
+                            "header_aggregate": false
+                        }
+                    ],
+                    "authors": [
+                        {
+                            "type": "artiste",
+                            "_id": "9000000000068057",
+                            "name": {
+                                "notice": "Bernard Plossu",
+                                "notice2": "Bernard PLOSSU",
+                                "list": "PLOSSU Bernard"
+                            },
+                            "name_complement": "",
+                            "gender": "masculin"
+                        }
+                    ]
+                },
+                "related": null
+            }
+        },
+        {
+            "_id": "180000000002778",
+            "highlight": null,
+            "_source": {
+                "ua": {
+                    "artwork": {
+                        "_id": "180000000002778",
+                        "type": "individual",
+                        "title_notice": "Eve musicienne",
+                        "title_list": "Eve musicienne",
+                        "collection_department_label_case": "none",
+                        "collaborators_design": "Atelier de céramique : Atelier André Metthey, Asnières-sur-Seine (France)",
+                        "inscriptions": "S. en-dessous: Vlaminck",
+                        "expositions_without_current": "\u003cul\u003e\u003cli\u003eAndré Derain, baigneuses et danseuses : Villeneuve-d'Ascq (France), Musée d'art moderne de Lille Métropole, 08 février 2003-26 mars 2003\u003c/li\u003e\n\u003cli\u003eLe Nu de Gauguin à Bonnard - Eve, icône de la modernité : Le Cannet (France), Musée Bonnard, 25 juin 2013-20 octobre 2013\u003c/li\u003e\n\u003cli\u003eL'art du feu dans l'atelier Metthey : Tokyo (Japon), Panasonic Shiodome Museum Rouault Gallery, 11 avril 2015-21 juin 2015\u003c/li\u003e\n\u003cli\u003eLe rêveur de la forêt : Paris (France), Musée Zadkine, 26 septembre 2019-23 février 2020\u003c/li\u003e\n\u003cli\u003eLes Flammes : Paris (France), Musée d'art moderne de la Ville de Paris, 15 octobre 2021-06 février 2022\u003c/li\u003e\u003c/ul\u003e",
+                        "expositions": "\u003cul\u003e\u003cli\u003eAndré Derain, baigneuses et danseuses : Villeneuve-d'Ascq (France), Musée d'art moderne de Lille Métropole, 08 février 2003-26 mars 2003\u003c/li\u003e\n\u003cli\u003eLe Nu de Gauguin à Bonnard - Eve, icône de la modernité : Le Cannet (France), Musée Bonnard, 25 juin 2013-20 octobre 2013\u003c/li\u003e\n\u003cli\u003eL'art du feu dans l'atelier Metthey : Tokyo (Japon), Panasonic Shiodome Museum Rouault Gallery, 11 avril 2015-21 juin 2015\u003c/li\u003e\n\u003cli\u003eLe rêveur de la forêt : Paris (France), Musée Zadkine, 26 septembre 2019-23 février 2020\u003c/li\u003e\n\u003cli\u003eLes Flammes : Paris (France), Musée d'art moderne de la Ville de Paris, 15 octobre 2021-06 février 2022\u003c/li\u003e\u003c/ul\u003e",
+                        "bibliography": "\u003cul\u003e\u003cli\u003eSuzanne Pagé, Musée d'Art Moderne de la Ville de Paris:La collection\nn° isbn 978-2-879008-88-2\n- reprod. p.143 \u003c/li\u003e\u003cli\u003eRouault et la céramique fauve dans l'atelier d'André Metthey. - Panasonic Shiodome Museum Rouault Gallery, 2015\nISBN 978 4 568 10485 1\n- reprod coul p 77\u003c/li\u003e\u003c/ul\u003e",
+                        "copyright": "© Adagp, Paris",
+                        "author_in_common": "a",
+                        "collection": "",
+                        "acquisition_mode": "Don",
+                        "date_creation": "1907 - 1909",
+                        "acquisition_year": 1937.0,
+                        "domain": "Objet/Design",
+                        "domain_leaf": "Objet/Design [sans précision]",
+                        "domain_deno_for_grid": "Objet/Design",
+                        "domain_description_mst": "Plat au décor d'Eve debout près de l'arbre sur fond blanc\nCéramique",
+                        "comments": "",
+                        "authors_notice": "Maurice de VLAMINCK",
+                        "authors_list": "VLAMINCK Maurice de",
+                        "dimensions": "diamètre: 31,5 cm",
+                        "acquisition": "Don de M. Ambroise Vollard en 1937",
+                        "inventory": "AMOA 225",
+                        "inventory_for_grid": "AMOA 225",
+                        "rights_management_leaf": "Adagp (Paris)",
+                        "default_tooltip_ua_description": "Plat au décor d'Eve debout près de l'arbre sur fond blanc\nCéramique",
+                        "authors_name_complement": "",
+                        "authors_site": "",
+                        "authors_documents": "",
+                        "authors_video": "",
+                        "authors_nationality": "",
+                        "authors_birth_death": "1876, Paris (France) - 1958, Rueil-la-Gadelière (Eure-et-Loir, France)",
+                        "live_and_work": "",
+                        "author_bibliography": "",
+                        "nb_images": 1.0,
+                        "medias": [
+                            {
+                                "file_name": "3Y/12/3Y12973.jpg",
+                                "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                                "max_width": 1000.0,
+                                "max_height": 1000.0,
+                                "box_width": 255.0,
+                                "box_height": 255.0,
+                                "_id": "90000000479197",
+                                "type": "image",
+                                "photographer": "Julien Vidal/Parisienne de Photographie",
+                                "copyright": "© Adagp, Paris",
+                                "header_aggregate": false
+                            }
+                        ],
+                        "slug": "maurice-de-vlaminck-eve-musicienne-180000000002778"
+                    },
+                    "medias": [
+                        {
+                            "file_name": "3Y/12/3Y12973.jpg",
+                            "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                            "max_width": 1000.0,
+                            "max_height": 1000.0,
+                            "box_width": 255.0,
+                            "box_height": 255.0,
+                            "_id": "90000000479197",
+                            "type": "image",
+                            "photographer": "Julien Vidal/Parisienne de Photographie",
+                            "copyright": "© Adagp, Paris",
+                            "header_aggregate": false
+                        }
+                    ],
+                    "authors": [
+                        {
+                            "type": "artiste",
+                            "_id": "9000000000067387",
+                            "name": {
+                                "notice": "Maurice de Vlaminck",
+                                "notice2": "Maurice de VLAMINCK",
+                                "list": "VLAMINCK Maurice de"
+                            },
+                            "name_complement": "",
+                            "gender": "masculin"
+                        }
+                    ]
+                },
+                "related": null
+            }
+        },
+        {
+            "_id": "180000000177349",
+            "highlight": null,
+            "_source": {
+                "ua": {
+                    "artwork": {
+                        "_id": "180000000177349",
+                        "type": "individual",
+                        "title_notice": "Dany",
+                        "title_list": "Dany",
+                        "collection_department_label_case": "none",
+                        "copyright": "© droits réservés",
+                        "author_in_common": "a",
+                        "collection": "",
+                        "acquisition_mode": "Don",
+                        "date_creation": "vers 1935",
+                        "acquisition_year": 2014.0,
+                        "domain": "Photographie",
+                        "domain_leaf": "Photographie [sans précision]",
+                        "domain_deno_for_grid": "Photographie",
+                        "domain_description_mst": "Tirage contact",
+                        "comments": "",
+                        "authors_notice": "Rémy DUVAL",
+                        "authors_list": "DUVAL Rémy",
+                        "dimensions": "13 x 18 cm",
+                        "acquisition": "Don de la Société des amis du musée d'art moderne de la Ville de Paris en 2014",
+                        "inventory": "AMVP-2015-1582",
+                        "inventory_for_grid": "AMVP-2015-1582",
+                        "rights_management_leaf": "..Type de droits non identifié",
+                        "default_tooltip_ua_description": "Tirage contact",
+                        "authors_name_complement": "",
+                        "authors_site": "",
+                        "authors_documents": "",
+                        "authors_video": "",
+                        "authors_nationality": "",
+                        "authors_birth_death": "1907, Rouen (Seine-Maritime, France) - 1984, Paris (France)",
+                        "live_and_work": "",
+                        "author_bibliography": "",
+                        "nb_images": 1.0,
+                        "medias": [
+                            {
+                                "file_name": "3Y/15/3Y15634.jpg",
+                                "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                                "max_width": 667.0,
+                                "max_height": 1000.0,
+                                "box_width": 170.0,
+                                "box_height": 255.0,
+                                "_id": "99900000560593",
+                                "type": "image",
+                                "photographer": "Aurélie Dupuis/Azentis Technology",
+                                "copyright": "© droits réservés",
+                                "header_aggregate": false
+                            }
+                        ],
+                        "slug": "remy-duval-dany-180000000177349"
+                    },
+                    "medias": [
+                        {
+                            "file_name": "3Y/15/3Y15634.jpg",
+                            "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                            "max_width": 667.0,
+                            "max_height": 1000.0,
+                            "box_width": 170.0,
+                            "box_height": 255.0,
+                            "_id": "99900000560593",
+                            "type": "image",
+                            "photographer": "Aurélie Dupuis/Azentis Technology",
+                            "copyright": "© droits réservés",
+                            "header_aggregate": false
+                        }
+                    ],
+                    "authors": [
+                        {
+                            "type": "artiste",
+                            "_id": "9000000000071741",
+                            "name": {
+                                "notice": "Rémy Duval",
+                                "notice2": "Rémy DUVAL",
+                                "list": "DUVAL Rémy"
+                            },
+                            "name_complement": "",
+                            "gender": "masculin"
+                        }
+                    ]
+                },
+                "related": null
+            }
+        },
+        {
+            "_id": "180000000185099",
+            "highlight": null,
+            "_source": {
+                "ua": {
+                    "artwork": {
+                        "_id": "180000000185099",
+                        "type": "individual",
+                        "title_notice": "Deauville",
+                        "title_list": "Deauville",
+                        "collection_department_label_case": "none",
+                        "copyright": "© droits réservés",
+                        "author_in_common": "a",
+                        "collection": "",
+                        "acquisition_mode": "Don",
+                        "date_creation": "vers 1935",
+                        "acquisition_year": 2014.0,
+                        "domain": "Photographie",
+                        "domain_leaf": "Photographie [sans précision]",
+                        "domain_deno_for_grid": "Photographie",
+                        "domain_description_mst": "Tirage gélatino-argentique sur support souple nitrate",
+                        "comments": "",
+                        "authors_notice": "Rémy DUVAL",
+                        "authors_list": "DUVAL Rémy",
+                        "dimensions": "6 x 6 cm",
+                        "acquisition": "Don de la Société des amis du musée d'art moderne de la Ville de Paris en 2014",
+                        "inventory": "AMVP-2015-3005",
+                        "inventory_for_grid": "AMVP-2015-3005",
+                        "rights_management_leaf": "..Type de droits non identifié",
+                        "default_tooltip_ua_description": "Tirage gélatino-argentique sur support souple nitrate",
+                        "authors_name_complement": "",
+                        "authors_site": "",
+                        "authors_documents": "",
+                        "authors_video": "",
+                        "authors_nationality": "",
+                        "authors_birth_death": "1907, Rouen (Seine-Maritime, France) - 1984, Paris (France)",
+                        "live_and_work": "",
+                        "author_bibliography": "",
+                        "nb_images": 1.0,
+                        "medias": [
+                            {
+                                "file_name": "3Y/21/3Y21993.JPG",
+                                "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                                "max_width": 966.0,
+                                "max_height": 1000.0,
+                                "box_width": 246.0,
+                                "box_height": 255.0,
+                                "_id": "99900000606584",
+                                "type": "image",
+                                "photographer": "Paris Musées/Musée d'art moderne de la ville de Paris",
+                                "copyright": "© droits réservés",
+                                "header_aggregate": false
+                            }
+                        ],
+                        "slug": "remy-duval-deauville-180000000185099"
+                    },
+                    "medias": [
+                        {
+                            "file_name": "3Y/21/3Y21993.JPG",
+                            "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                            "max_width": 966.0,
+                            "max_height": 1000.0,
+                            "box_width": 246.0,
+                            "box_height": 255.0,
+                            "_id": "99900000606584",
+                            "type": "image",
+                            "photographer": "Paris Musées/Musée d'art moderne de la ville de Paris",
+                            "copyright": "© droits réservés",
+                            "header_aggregate": false
+                        }
+                    ],
+                    "authors": [
+                        {
+                            "type": "artiste",
+                            "_id": "9000000000071741",
+                            "name": {
+                                "notice": "Rémy Duval",
+                                "notice2": "Rémy DUVAL",
+                                "list": "DUVAL Rémy"
+                            },
+                            "name_complement": "",
+                            "gender": "masculin"
+                        }
+                    ]
+                },
+                "related": null
+            }
+        },
+        {
+            "_id": "180000000002218",
+            "highlight": null,
+            "_source": {
+                "ua": {
+                    "artwork": {
+                        "_id": "180000000002218",
+                        "type": "individual",
+                        "title_notice": "Composition A",
+                        "title_list": "Composition A",
+                        "collection_department_label_case": "none",
+                        "dimensions_additional": "Vue  I: 15 x 38 cm\nVue II: 36 x 28 cm",
+                        "inscriptions": "S.B.G.: Y. Grammaticopoulos",
+                        "copyright": "© droits réservés",
+                        "author_in_common": "a",
+                        "collection": "",
+                        "acquisition_mode": "Achat",
+                        "date_creation": "vers 1966",
+                        "acquisition_year": 1966.0,
+                        "domain": "Dessin",
+                        "domain_leaf": "Dessin [sans précision]",
+                        "domain_deno_for_grid": "Dessin",
+                        "domain_description_mst": "Se compose de deux vues\n2 gouaches sur papier collées sur carton",
+                        "comments": "",
+                        "authors_notice": "Yannis GRAMMATICOPOULOS",
+                        "authors_list": "GRAMMATICOPOULOS Yannis",
+                        "dimensions": "75 x 55 cm",
+                        "acquisition": "Achat à l'artiste en 1966",
+                        "inventory": "AMD 392",
+                        "inventory_for_grid": "AMD 392",
+                        "rights_management_leaf": "..Type de droits non identifié",
+                        "default_tooltip_ua_description": "Se compose de deux vues\n2 gouaches sur papier collées sur carton",
+                        "authors_name_complement": "",
+                        "authors_site": "",
+                        "authors_documents": "",
+                        "authors_video": "",
+                        "authors_nationality": "",
+                        "authors_birth_death": "1928, Athènes (Grèce)",
+                        "live_and_work": "",
+                        "author_bibliography": "",
+                        "nb_images": 1.0,
+                        "medias": [
+                            {
+                                "file_name": "3Y/09/3Y09045.jpg",
+                                "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                                "max_width": 724.0,
+                                "max_height": 1000.0,
+                                "box_width": 185.0,
+                                "box_height": 255.0,
+                                "_id": "90000000379357",
+                                "type": "image",
+                                "photographer": "Eric Emo/Parisienne de Photographie",
+                                "copyright": "© droits réservés",
+                                "header_aggregate": false
+                            }
+                        ],
+                        "slug": "yannis-grammaticopoulos-composition-a-180000000002218"
+                    },
+                    "medias": [
+                        {
+                            "file_name": "3Y/09/3Y09045.jpg",
+                            "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                            "max_width": 724.0,
+                            "max_height": 1000.0,
+                            "box_width": 185.0,
+                            "box_height": 255.0,
+                            "_id": "90000000379357",
+                            "type": "image",
+                            "photographer": "Eric Emo/Parisienne de Photographie",
+                            "copyright": "© droits réservés",
+                            "header_aggregate": false
+                        }
+                    ],
+                    "authors": [
+                        {
+                            "type": "artiste",
+                            "_id": "9000000000072555",
+                            "name": {
+                                "notice": "Yannis Grammaticopoulos",
+                                "notice2": "Yannis GRAMMATICOPOULOS",
+                                "list": "GRAMMATICOPOULOS Yannis"
+                            },
+                            "name_complement": "",
+                            "gender": "masculin"
+                        }
+                    ]
+                },
+                "related": null
+            }
+        },
+        {
+            "_id": "180000000002424",
+            "highlight": null,
+            "_source": {
+                "ua": {
+                    "artwork": {
+                        "_id": "180000000002424",
+                        "type": "individual",
+                        "title_notice": "Etude de fillette",
+                        "title_list": "Etude de fillette",
+                        "title_attributed": "Autre étude",
+                        "collection_department_label_case": "none",
+                        "inscriptions": "S.B.DR.R.: Raynefeld",
+                        "copyright": "Domaine public",
+                        "author_in_common": "a",
+                        "collection": "",
+                        "acquisition_mode": "Don",
+                        "date_creation": "s.d.",
+                        "acquisition_year": 1984.0,
+                        "domain": "Dessin",
+                        "domain_leaf": "Dessin [sans précision]",
+                        "domain_deno_for_grid": "Dessin",
+                        "domain_description_mst": "Etude au verso\nCrayon et lavis sur papier",
+                        "comments": "",
+                        "authors_notice": "Jozef RAYNEFELD (Jozef REINFELD, dit)",
+                        "authors_list": "RAYNEFELD Jozef (REINFELD Jozef, dit)",
+                        "dimensions": "29,8 x 23,5 cm",
+                        "acquisition": "Don Doda Conrad en 1984",
+                        "inventory": "AMD 1056",
+                        "inventory_for_grid": "AMD 1056",
+                        "rights_management_leaf": "..Domaine public",
+                        "default_tooltip_ua_description": "Etude au verso\nCrayon et lavis sur papier",
+                        "authors_name_complement": "",
+                        "authors_site": "",
+                        "authors_documents": "",
+                        "authors_video": "",
+                        "authors_nationality": "",
+                        "authors_birth_death": "1908, Varsovie (Pologne) - 1940, France",
+                        "live_and_work": "",
+                        "author_bibliography": "",
+                        "nb_images": 2.0,
+                        "medias": [
+                            {
+                                "file_name": "3Y/09/3Y09990.jpg",
+                                "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                                "max_width": 778.0,
+                                "max_height": 1000.0,
+                                "box_width": 198.0,
+                                "box_height": 255.0,
+                                "_id": "90000000386017",
+                                "type": "image",
+                                "photographer": "Eric Emo/Parisienne de Photographie",
+                                "copyright": "Domaine public",
+                                "header_aggregate": false
+                            },
+                            {
+                                "file_name": "1A/36/1A36242.jpg",
+                                "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                                "max_width": 385.0,
+                                "max_height": 497.0,
+                                "box_width": 198.0,
+                                "box_height": 255.0,
+                                "_id": "90000000136778",
+                                "type": "image",
+                                "copyright": "Domaine public",
+                                "header_aggregate": false
+                            }
+                        ],
+                        "slug": "jozef-raynefeld-jozef-reinfeld-dit-etude-de-fillette-180000000002424"
+                    },
+                    "medias": [
+                        {
+                            "file_name": "3Y/09/3Y09990.jpg",
+                            "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                            "max_width": 778.0,
+                            "max_height": 1000.0,
+                            "box_width": 198.0,
+                            "box_height": 255.0,
+                            "_id": "90000000386017",
+                            "type": "image",
+                            "photographer": "Eric Emo/Parisienne de Photographie",
+                            "copyright": "Domaine public",
+                            "header_aggregate": false
+                        },
+                        {
+                            "file_name": "1A/36/1A36242.jpg",
+                            "url_template": "https://images.navigart.fr/{size}/{file_name}",
+                            "max_width": 385.0,
+                            "max_height": 497.0,
+                            "box_width": 198.0,
+                            "box_height": 255.0,
+                            "_id": "90000000136778",
+                            "type": "image",
+                            "copyright": "Domaine public",
+                            "header_aggregate": false
+                        }
+                    ],
+                    "authors": [
+                        {
+                            "type": "artiste",
+                            "_id": "9000000000072835",
+                            "name": {
+                                "notice": "Jozef Raynefeld (Jozef Reinfeld, dit)",
+                                "notice2": "Jozef RAYNEFELD (Jozef REINFELD, dit)",
+                                "list": "RAYNEFELD Jozef (REINFELD Jozef, dit)"
+                            },
+                            "name_complement": "",
+                            "gender": "masculin"
+                        }
+                    ]
+                },
+                "related": null
+            }
+        }
+    ]
+}
