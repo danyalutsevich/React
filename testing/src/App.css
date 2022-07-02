@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+h1{
+  font-family: 'Libre Barcode 128 Text', cursive;
+  font-size: 3em;
+}
