@@ -8,14 +8,14 @@ class Item extends Component {
         super(props)
         this.state = {
             pieces: [],
-            pieceIndex: 10,
+            pieceIndex: 3,
             loading: true,
         }
     }
 
     componentDidMount() {
 
-        fetch('https://api.navigart.fr/18/artworks?sort=random&buster=30&size=600&from=0')
+        fetch(`https://api.navigart.fr/18/artworks?sort=random&buster=30&size=600&from=${Math.round(Math.random()*600)}`)
             .then(res => res.json())
             .then(data => {
                 this.setState({
@@ -64,18 +64,23 @@ class Item extends Component {
                 <h2>Modern art</h2>
 
                 <h2>Item:{pieceIndex}</h2>
+                <h2>{Math.round(Math.random()*600)}</h2>
                 <pre>{JSON.stringify(pieces.results[pieceIndex])}</pre>
 
-                <button onClick={() => { this.clickPrevious() }}>-
-                    <img src="" key="previous" />
+                <button onClick={() => { this.clickPrevious() }}>
+
+                    <Piece piece={pieces.results[pieceIndex - 1]} key={pieceIndex} size="200"  />
+
                 </button>
 
-                <button onClick={() => { this.clickNext() }}>+
-                    <img src="" key="next" />
+                <button onClick={() => { this.clickNext() }}>
+
+                    <Piece piece={pieces.results[pieceIndex + 1]} key={pieceIndex} size="200"  />
+
                 </button>
 
-                <Piece piece={pieces.results[pieceIndex]} />
-                
+                <Piece piece={pieces.results[pieceIndex]} key={pieceIndex} size="400"  />
+
                 <>
                     {/* <div>
                     {

@@ -10,7 +10,7 @@ export default class Piece extends Component {
         this.state = {
             piece: props.piece,
             media : props.piece._source.ua.artwork.medias[0],
-            source: `https://images.navigart.fr/${300}/${props.piece._source.ua.artwork.medias[0].file_name}`
+            source: `https://images.navigart.fr/${props.size}/${props.piece._source.ua.artwork.medias[0].file_name}`
         }
 
     }
