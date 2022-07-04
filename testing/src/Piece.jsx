@@ -55,25 +55,21 @@ export default class Piece extends Component {
 
         return (
             <div className={this.props.className || ""}>
+                <button onClick={() => { this.clickPrevious() }} className="previous">
 
-                <div className="nav">
+                    <img src={this.getImgSource(pieceIndex - 1, 200)} alt={pieceIndex - 1} />
 
-                    <button onClick={() => { this.clickPrevious() }} className="previous">
+                </button>
 
-                        <img src={this.getImgSource(pieceIndex - 1, 200)} alt={pieceIndex - 1} />
+                <button onClick={() => { this.clickNext() }} className="next">
 
-                    </button>
+                    <img src={this.getImgSource(pieceIndex + 1, 200)} alt={pieceIndex + 1} />
 
-                    <button onClick={() => { this.clickNext() }} className="next">
-
-                        <img src={this.getImgSource(pieceIndex + 1, 200)} alt={pieceIndex + 1} />
-
-                    </button>
-                </div>
+                </button>
 
                 <div className="current">
 
-                    <img src={this.getImgSource(pieceIndex, 400)} alt={aboutPiece.title_notice} />
+                    <img src={this.getImgSource(pieceIndex, 400)} alt={pieceIndex} className="currentImage" />
                     <div className="about">
 
                         <p>{aboutPiece.title_notice}</p>

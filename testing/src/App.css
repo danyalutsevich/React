@@ -1,33 +1,34 @@
 * {
-
   margin: 0;
   padding: 0;
   border: 0;
-
-}
-
-.Items {
-  display: flex;
-  justify-content: space-around;
+  background-color: pink;
 }
 
 .Time {
   font-family: 'Libre Barcode 128 Text', cursive;
   font-size: 3em;
+  background-color: white;
 }
 
-img {
-  height: 100%;
-}
-
-.current{
-  font-size: 1em;
-  font-family: 'Ubuntu', sans-serif;
+.itemExplorer {
+  background-color: #ffc0cb;
+  position: relative;
+  display: inline;
 }
 
 .nav {
   display: flex;
   justify-content: space-around;
+}
+
+.currentImage{
+  margin: 20px;
+  margin-left: 170px;
+}
+.current{
+  display: flex;
+  justify-content: space-between; 
 }
 
 .previous {
@@ -37,7 +38,6 @@ img {
   position: absolute;
   left: 0px;
   top: 50%;
-
 }
 
 .next {
@@ -49,13 +49,14 @@ img {
   top: 50%;
 }
 
-.itemExplorer {
+img {
   height: 100%;
-  background-color: #ffc0cb;
-  position: relative;
 }
 
-.about {
-  text-align: right;
-  font-size: 1.5em;
+.about{
+  font-size: 2em;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: left;
+  width: 500px;
+  margin: auto;
 }
