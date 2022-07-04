@@ -1,53 +1,61 @@
-
-*{
+* {
 
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   border: 0;
 
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Items {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-h1{
+.Time {
   font-family: 'Libre Barcode 128 Text', cursive;
   font-size: 3em;
+}
+
+img {
+  height: 100%;
+}
+
+.current{
+  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.previous {
+  width: 150px;
+  height: 150px;
+  background-color: #ff0000;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+
+}
+
+.next {
+  position: absolute;
+  background-color: #0004ff;
+  width: 150px;
+  height: 150px;
+  right: 0px;
+  top: 50%;
+}
+
+.itemExplorer {
+  height: 100%;
+  background-color: #ffc0cb;
+  position: relative;
+}
+
+.about {
+  text-align: right;
+  font-size: 1.5em;
 }
