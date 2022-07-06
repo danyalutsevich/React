@@ -68,8 +68,10 @@ export default class Piece extends Component {
                 </button>
 
                 <div className="current">
+                    <div className="currentImage">
 
-                    <img src={this.getImgSource(pieceIndex, 400)} alt={pieceIndex} className="currentImage" />
+                    <img src={this.getImgSource(pieceIndex, 400)} alt={pieceIndex}  />
+                    </div>
                     <div className="about">
 
                         <p>{aboutPiece.title_notice}</p>

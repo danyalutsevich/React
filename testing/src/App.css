@@ -5,6 +5,10 @@
   background-color: pink;
 }
 
+#root {}
+
+.App {}
+
 .Time {
   font-family: 'Libre Barcode 128 Text', cursive;
   font-size: 3em;
@@ -14,7 +18,9 @@
 .itemExplorer {
   background-color: #ffc0cb;
   position: relative;
-  display: inline;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .nav {
@@ -22,13 +28,16 @@
   justify-content: space-around;
 }
 
-.currentImage{
+.currentImage {
   margin: 20px;
   margin-left: 170px;
 }
-.current{
+
+.current {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
+  height: 90vh;
+  width: 100vw;
 }
 
 .previous {
@@ -43,8 +52,8 @@
 .next {
   position: absolute;
   background-color: #0004ff;
-  width: 150px;
-  height: 150px;
+  width: 20vh;
+  height: 20vh;
   right: 0px;
   top: 50%;
 }
@@ -53,10 +62,65 @@ img {
   height: 100%;
 }
 
-.about{
+.about {
   font-size: 2em;
   font-family: 'Ubuntu', sans-serif;
   text-align: left;
-  width: 500px;
-  margin: auto;
+}
+.Chess{
+  
+}
+
+.Board {
+  display: flex;
+  width: 95vw;
+  height: 95vh;
+}
+
+.Coordiantes {
+  font-size: 1.5em;
+  font-family: 'Ubuntu', sans-serif;
+  position: absolute;
+  text-align: left;
+  display: flex;
+}
+
+.Files {
+  text-align: left;
+  display: flex;
+}
+
+.Ranks {
+
+  text-align: left;
+  display: inline;
+
+}
+
+
+.whiteCell {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+}
+
+.blackCell {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+}
+
+
+
+.File {
+  font-size: 1.5em;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: capitalize;
+}
+
+.Rank {
+  font-size: 1.5em;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 7vh 0vh 0vh 0vh;
+
 }

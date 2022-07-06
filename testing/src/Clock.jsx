@@ -11,29 +11,29 @@ class Clock extends Component {
 
     }
 
-    componentDidMount(){
+    componentDidMount() {
 
-        this.IntervalID = setInterval(()=>{this.tick()},1000)
+        this.IntervalID = setInterval(() => { this.tick() }, 1000)
 
     }
 
-    componentWillUnmount(){
+    componentWillUnmount() {
 
         clearInterval(this.IntervalID)
     }
 
-    tick(){
-        this.setState({date: new Date()})
+    tick() {
+        this.setState({ date: new Date() })
     }
 
     render() {
 
         return (
-            
-                <h1 className="Time">
-                    Time: {this.state.date.toLocaleTimeString()}
-                </h1>
-            
+
+            <h1 className="Time">
+                Time: {this.state.date.toLocaleTimeString()}
+            </h1>
+
         )
 
     }
