@@ -24,7 +24,7 @@ export default class Chess extends React.Component {
             row = []
             for (let j = 0; j < 8; j++) {
 
-                row.push({ color: (i + j) % 2, file: files[j], rank: i })
+                row.push({ color: (i + j) % 2, file: files[i], rank: 8 - j })
             }
             tempBoard.push(row)
         }
@@ -63,7 +63,7 @@ export default class Chess extends React.Component {
 
         return (
 
-            <div className="Chess">
+            <div className="Board">
 
                 <div className="Coordinates">
                     <div className="Ranks">
@@ -78,22 +78,19 @@ export default class Chess extends React.Component {
 
                         )}
                     </div>
-
-
                 </div>
 
-                <div className="Board">
-                    {board.map((row) =>
-                        <div key={row[0].rank}>
-                            {row.map((cell) =>
-                                cell.color === 0 ? <div className="whiteCell" key={cell.file + cell.rank}></div> :
-                                    <div className="blackCell" key={cell.file + cell.rank}></div>
-                            )}
-                        </div>
-                    )}
-                </div>
-
+                {board.map((row) =>
+                    <div key={row[0].file}>
+                        {row.map((cell) => {
+                            return cell.color === 0 ?
+                                <div className="whiteCell" key={cell.file + cell.rank}>{cell.file + cell.rank}</div> :
+                                <div className="blackCell" key={cell.file + cell.rank}>{cell.file + cell.rank}</div>
+                        })}
+                    </div>
+                )}
             </div>
+
         )
     }
 }

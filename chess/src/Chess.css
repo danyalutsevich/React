@@ -1,0 +1,15 @@
+        
+
+.whiteCell{
+
+
+    width:10vh;
+    height:10vh;
+    background-color:white;
+}
+
+.blackCell{
+    width: 10vh;
+    height: 10vh;
+    background-color: black;
+}

@@ -68,7 +68,6 @@ img {
   text-align: left;
 }
 .Chess{
-  
 }
 
 .Board {
@@ -100,14 +99,15 @@ img {
 
 .whiteCell {
   background-color: white;
-  width: 100px;
-  height: 100px;
+  width: 10vh;
+  height: 10vh;
 }
 
 .blackCell {
   background-color: black;
-  width: 100px;
-  height: 100px;
+  width: 10vh ;
+  height: 10vh;
+  color: white;
 }
 
 

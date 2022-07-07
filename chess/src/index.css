@@ -1,0 +1,73 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+#root{
+  background-color: indianred;
+
+}
+
+.parent {
+
+  background-color: aqua;
+  padding: 40px;
+  position: relative;
+  display: flex;
+}
+
+.one {
+  top: 0px;
+  left: 0px;
+  background-color: red;
+}
+
+.two {
+
+  background-color: green;
+}
+
+.three {
+
+  background-color: blue;
+}
+
+.Board {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.Ranks  {
+  position: relative;
+  right: 40px;
+}
+
+.Files{
+  position: absolute;
+  bottom: -50px;
+  display: flex;
+  justify-content: center;
+}
+
+.Rank{
+
+}
+
+.File{
+  margin-right: 10vh;
+}
+
+.whiteCell {
+  width: 10vh;
+  height: 10vh;
+  background-color: white;
+}
+
+.blackCell {
+  width: 10vh;
+  height: 10vh;
+  background-color: black;
+  color: white;
+}
