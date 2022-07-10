@@ -1,14 +1,20 @@
 import React from "react";
 import './Chess.css'
+import Piece from "./Piece";
+import {Chess} from "chess.js";
 
-export default class Chess extends React.Component {
+
+export default class Board extends React.Component {
 
     constructor(props) {
         super(props)
 
         this.state = {
             board: [],
-            files: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+            files: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
+            a: 10,
+            b: 20,
+            chess: new Chess(),
         }
     }
 
@@ -16,8 +22,11 @@ export default class Chess extends React.Component {
 
         const {
             files,
+            chess,
         } = this.state;
 
+        console.log(chess.move('e4'))
+        console.log('e4',chess.board())
         let tempBoard = []
         let row = []
 
@@ -43,14 +52,14 @@ export default class Chess extends React.Component {
     componentDidUpdate() {
 
         console.log("board", this.state.board)
-
     }
 
     render() {
 
         const {
             board,
-            files
+            files,
+            chess,
         } = this.state;
 
 
@@ -62,10 +71,15 @@ export default class Chess extends React.Component {
             </div>)
         }
 
+
+
+
         return (
 
             <div className="Board">
 
+                <div className="a" draggable={true} onDragStartCapture={()=>{this.setState({a:"captured"})}}>{this.state.a}</div>
+                <div className="b" draggable={true}>{this.state.b}</div>
                 <div className="Coordinates">
                     <div className="Ranks">
                         {[...Array(8).keys()].reverse().map((rankNumber) =>
@@ -81,12 +95,12 @@ export default class Chess extends React.Component {
                     </div>
                 </div>
 
-                {board.map((row) =>
+                {board.map((row,rindex) =>
                     <div key={row[0].file}>
-                        {row.map((cell) => {
+                        {row.map((cell,cindex) => {
                             return cell.color === 0 ?
-                                <div className="whiteCell" key={cell.file + cell.rank}>{cell.file + cell.rank}</div> :
-                                <div className="blackCell" key={cell.file + cell.rank}>{cell.file + cell.rank}</div>
+                                <div className="whiteCell" key={cell.file + cell.rank}><Piece piece={chess.board()[cindex][rindex]}/></div> :
+                                <div className="blackCell" key={cell.file + cell.rank}><Piece piece={chess.board()[cindex][rindex]}/></div>
                         })}
                     </div>
                 )}

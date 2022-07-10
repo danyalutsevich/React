@@ -1,16 +1,10 @@
 import './App.css';
-import Chess from './Chess'
+import Board from './Board'
 
 function App() {
   return (
-    <div>
-
-      <div className='parent'>parent
-        <div className='one'>one</div>
-        <div className='two'>two</div>
-        <div className='three'>three</div>
-      </div>
-      <Chess />
+    <div className="App">
+      <Board />
     </div>
   );
 }
