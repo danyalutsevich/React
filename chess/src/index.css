@@ -28,18 +28,23 @@
   justify-content: center;
   width: 80%;
   height: 80%;
-
+  background-color: transparent;
+  
 }
 
 .wPiece{
+  
+  height: 80%;
+  cursor: move;
+  filter:invert(85%) drop-shadow(0 0 10px black) ;
 
-  filter:invert(100%);
-  height: 100%;
-  border: 2px solid white;
 }
 
 .bPiece{
 
+  height: 80%;
+  cursor: grab;
+  filter:drop-shadow(0 0 10px white);
 }
 
 .a{

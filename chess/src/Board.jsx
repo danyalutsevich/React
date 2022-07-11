@@ -1,7 +1,6 @@
 import React from "react";
 import './Chess.css'
-import Piece from "./Piece";
-import {Chess} from "chess.js";
+import { Chess } from "chess.js";
 
 
 export default class Board extends React.Component {
@@ -10,11 +9,15 @@ export default class Board extends React.Component {
         super(props)
 
         this.state = {
+            chess: new Chess(),
             board: [],
+            pieces: [],
             files: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
             a: 10,
             b: 20,
-            chess: new Chess(),
+            selectedPiece: '',
+            from: '',
+            to: ''
         }
     }
 
@@ -25,8 +28,9 @@ export default class Board extends React.Component {
             chess,
         } = this.state;
 
-        console.log(chess.move('e4'))
-        console.log('e4',chess.board())
+        // console.log(chess.move('Nf3'))
+        // console.log('e4', chess.board())
+
         let tempBoard = []
         let row = []
 
@@ -40,6 +44,7 @@ export default class Board extends React.Component {
         }
 
         this.setState({ board: tempBoard })
+        this.setState({ pieces: chess.board() })
 
     }
 
@@ -51,15 +56,79 @@ export default class Board extends React.Component {
 
     componentDidUpdate() {
 
-        console.log("board", this.state.board)
+        console.log(this.state)
+
     }
+
+    getPiece(piece) {
+
+        return piece != null ?
+            < img src={`./Icons/${piece?.type}.svg`} alt={`${piece?.type}`} className={piece?.color + "Piece"} />
+            : null
+    }
+
+    onDragStartHandler(e, cell, rindex, cindex) {
+
+        e.target.style.cursor = 'grabbing'
+        // console.log("drag", cell, rindex, cindex)
+
+        let piece = this.state.chess.board()[cindex][rindex]
+
+        this.setState({ selectedPiece: piece.type })
+        this.setState({ from: piece.square })
+        this.setState({ to: '' })
+
+    }
+
+    onDragEnterHandler(e) {
+
+        // e.target.style = "filter:invert(50%)"
+    }
+
+    onDragLeaveHandler(e) {
+
+        // e.target.style = "filter:invert(-50%)"
+    }
+
+    onDragEndHandler(e) {
+
+        // e.target.style = "filter:invert(-50%)"
+    }
+
+    onDragOverHandler(e) {
+
+        e.preventDefault()
+    }
+
+    onDropHandler(e, cell) {
+
+        e.preventDefault()
+
+        const {
+            selectedPiece,
+        } = this.state
+
+
+
+        let to = selectedPiece.toUpperCase().concat(cell.file.concat(cell.rank)).replace('P','')
+
+
+        console.log(to)
+
+        this.state.chess.move(to)
+
+        this.setState({ pieces: this.state.chess.board() })
+
+        // console.log("drop", cell)
+    }
+
 
     render() {
 
         const {
             board,
             files,
-            chess,
+            pieces
         } = this.state;
 
 
@@ -73,12 +142,11 @@ export default class Board extends React.Component {
 
 
 
-
         return (
 
             <div className="Board">
 
-                <div className="a" draggable={true} onDragStartCapture={()=>{this.setState({a:"captured"})}}>{this.state.a}</div>
+                <div className="a" draggable={true} onDragStartCapture={() => { this.setState({ a: "captured" }) }}>{this.state.a}</div>
                 <div className="b" draggable={true}>{this.state.b}</div>
                 <div className="Coordinates">
                     <div className="Ranks">
@@ -95,12 +163,36 @@ export default class Board extends React.Component {
                     </div>
                 </div>
 
-                {board.map((row,rindex) =>
+                {board.map((row, rindex) =>
                     <div key={row[0].file}>
-                        {row.map((cell,cindex) => {
+                        {row.map((cell, cindex) => {
                             return cell.color === 0 ?
-                                <div className="whiteCell" key={cell.file + cell.rank}><Piece piece={chess.board()[cindex][rindex]}/></div> :
-                                <div className="blackCell" key={cell.file + cell.rank}><Piece piece={chess.board()[cindex][rindex]}/></div>
+
+                                <div className="whiteCell" key={cell.file + cell.rank}
+
+                                    onDragStart={(e) => this.onDragStartHandler(e, cell, rindex, cindex)}
+                                    onDragEnter={(e) => this.onDragEnterHandler(e)}
+                                    onDragLeave={(e) => this.onDragLeaveHandler(e)}
+                                    onDragEnd={(e) => this.onDragEndHandler(e)}
+                                    onDragOver={(e) => this.onDragOverHandler(e)}
+                                    onDrop={(e) => this.onDropHandler(e, cell)}
+                                >
+                                    {this.getPiece(pieces[cindex][rindex])}
+                                </div>
+
+                                :
+
+                                <div className="blackCell" key={cell.file + cell.rank}
+
+                                    onDragStart={(e) => this.onDragStartHandler(e, cell, rindex, cindex)}
+                                    onDragEnter={(e) => this.onDragEnterHandler(e)}
+                                    onDragLeave={(e) => this.onDragLeaveHandler(e)}
+                                    onDragEnd={(e) => this.onDragEndHandler(e)}
+                                    onDragOver={(e) => this.onDragOverHandler(e)}
+                                    onDrop={(e) => this.onDropHandler(e, cell)}
+                                >
+                                    {this.getPiece(pieces[cindex][rindex])}
+                                </div>
                         })}
                     </div>
                 )}
