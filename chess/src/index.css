@@ -35,8 +35,8 @@
 .wPiece{
   
   height: 80%;
-  cursor: move;
-  filter:invert(85%) drop-shadow(0 0 10px black) ;
+  cursor: grab;
+  /* filter: drop-shadow(0 0 10px black) ; */
 
 }
 
@@ -44,37 +44,21 @@
 
   height: 80%;
   cursor: grab;
-  filter:drop-shadow(0 0 10px white);
+  /* filter:drop-shadow(0 0 10px white); */
 }
 
-.a{
-  color: rgb(255, 255, 255);
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-}
 
-.b{
-  color: rgb(255, 255, 255);
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-}
 .Board {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .Coordinates {
   position: relative;
   right: 0;
   background-color: transparent;
+  font-weight: 600;
 }
 
 .Ranks {
@@ -108,10 +92,17 @@
 
 }
 
+.Turn{
+
+  position: absolute;
+  right: -10vh;
+
+}
+
 .whiteCell {
   width: 10vh;
   height: 10vh;
-  background-color: white;
+  background-color: #eae9d2;
   
   display: flex;
   align-items: center;
@@ -121,10 +112,15 @@
 .blackCell {
   width: 10vh;
   height: 10vh;
-  background-color: black;
+  background-color: #4b7399;
   color: white;
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.availableMove{
+  background-color:rgb(3, 179, 56);
+  transition: 1000ms;
 }
