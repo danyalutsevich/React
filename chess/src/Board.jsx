@@ -72,7 +72,7 @@ export default class Board extends React.Component {
                 }
             }
         }
-
+        console.log(availableMovesTemp)
         this.setState({ availableMoves: availableMovesTemp })
 
     }
@@ -88,19 +88,39 @@ export default class Board extends React.Component {
 
     }
 
+    engineMove() {
+
+        const {
+            chess,
+        } = this.state
+        if (chess.turn() === 'b') {
+
+            fetch('https://chess.apurn.com/nextmove',
+                {
+                    method: "POST",
+                    body: this.state.chess.fen()
+
+                })
+                .then(res => res.text())
+                .then(res => chess.move({ from: res[0] + res[1], to: res[2] + res[3] }))
+                .then(() => this.setState({ pieces: chess.board() }))
+        }
+
+    }
 
     onDragStartHandler(e, cell, rindex, cindex) {
 
         e.target.style.cursor = 'grabbing'
 
 
-        console.log("drag", cell, rindex, cindex)
+        // console.log("drag", cell, rindex, cindex)
         let piece = this.state.chess.board()[cindex][rindex]
 
         this.setState({ selectedPiece: piece.type })
         this.setState({ from: piece.square })
 
         this.getAvailableMoves(piece.square)
+        console.log("moves", this.state.chess.moves({ square: piece.square }))
 
     }
 
@@ -131,20 +151,21 @@ export default class Board extends React.Component {
 
         const {
             from,
-            chess
         } = this.state
-
-
 
         let to = cell.file.concat(cell.rank)
 
-
-        console.log('drop', to)
+        e.target.style.cursor = 'grab'
+        // console.log('drop', to)
 
         console.log('move', this.state.chess.move({ from: from, to: to }))
 
-        this.setState({ pieces: this.state.chess.board() })
+        this.setState({
+            pieces: this.state.chess.board(),
+            availableMoves: []
+        })
 
+        this.engineMove()
         // console.log("drop", cell)
 
 
@@ -180,6 +201,7 @@ export default class Board extends React.Component {
 
 
                 }
+
                 <div className="Coordinates">
                     <div className="Ranks">
                         {[...Array(8).keys()].reverse().map((rankNumber) =>
@@ -200,15 +222,7 @@ export default class Board extends React.Component {
                         {row.map((cell, rankindex) => {
                             return (
 
-                                <div className=
-                                    {
-
-                                        (cell.color === 0 ? "whiteCell" : "blackCell")
-                                            .concat(this.state.availableMoves.some(
-                                                (element) => element.f == fileindex && element.r == rankindex) ? " availableMove" : "")
-
-                                    }
-
+                                <div className={cell.color === 0 ? "whiteCell" : "blackCell"}
                                     key={cell.file + cell.rank}
 
                                     onDragStart={(e) => this.onDragStartHandler(e, cell, fileindex, rankindex)}
@@ -218,6 +232,14 @@ export default class Board extends React.Component {
                                     onDragOver={(e) => this.onDragOverHandler(e)}
                                     onDrop={(e) => this.onDropHandler(e, cell)}
                                 >
+
+                                    {
+                                        this.state.availableMoves.some(
+                                            (element) => element.f === fileindex && element.r === rankindex) ?
+                                            <div className="availableMove"></div> : null
+                                    }
+
+
                                     {this.getPiece(pieces[rankindex][fileindex])}
 
                                 </div>
