@@ -1,6 +1,6 @@
 import React from "react";
 import { Chess } from "chess.js";
-
+import EndGameModal from "./EndGameModal"
 
 export default class Board extends React.Component {
 
@@ -16,6 +16,7 @@ export default class Board extends React.Component {
             from: '',
             availableMoves: [],
         }
+
     }
 
     fillBoard() {
@@ -85,6 +86,8 @@ export default class Board extends React.Component {
     componentDidUpdate() {
 
         console.log(this.state)
+        console.log(this.state.chess.fen())
+
 
     }
 
@@ -102,10 +105,10 @@ export default class Board extends React.Component {
 
                 })
                 .then(res => res.text())
-                .then(res => chess.move({ from: res[0] + res[1], to: res[2] + res[3] }))
+                .then(res => chess.move({ from: res[0] + res[1], to: res[2] + res[3], promotion: res[4] }))
                 .then(() => this.setState({ pieces: chess.board() }))
+            // .then(()=>{setTimeout(()=>this.engineMove())})
         }
-
     }
 
     onDragStartHandler(e, cell, rindex, cindex) {
@@ -120,7 +123,6 @@ export default class Board extends React.Component {
         this.setState({ from: piece.square })
 
         this.getAvailableMoves(piece.square)
-        console.log("moves", this.state.chess.moves({ square: piece.square }))
 
     }
 
@@ -158,7 +160,7 @@ export default class Board extends React.Component {
         e.target.style.cursor = 'grab'
         // console.log('drop', to)
 
-        console.log('move', this.state.chess.move({ from: from, to: to }))
+        console.log('move', this.state.chess.move({ from: from, to: to, promotion: 'q' }))
 
         this.setState({
             pieces: this.state.chess.board(),
@@ -201,6 +203,20 @@ export default class Board extends React.Component {
 
 
                 }
+                {
+                    chess.game_over() ?
+                        <EndGameModal
+                            isCheckmate={chess.in_checkmate()}
+                            isDraw={chess.in_draw()}
+                            isStaleMate={chess.in_stalemate()}
+                            isInsufficient_material={chess.insufficient_material()}
+                            isIn_threefold_repetition={chess.in_threefold_repetition()}
+                            turn={chess.turn()}
+                        /> :
+                        null
+
+                }
+
 
                 <div className="Coordinates">
                     <div className="Ranks">

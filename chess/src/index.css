@@ -6,11 +6,20 @@
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   width: 100vw;
   height: 100vh;
 }
-.App{
+
+.favicon{
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  display: block;
+}
+
+.App {
   background-color: rgb(248, 131, 223);
   display: flex;
   align-items: center;
@@ -19,35 +28,63 @@ body{
   height: 100vh;
 }
 
-.favicon{
+.favicon {
 
-  color:pink;
+  color: pink;
   background-color: pink;
 }
 
-.PieceContainer{
+.PieceContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 80%;
   height: 80%;
   background-color: transparent;
-  
+
 }
 
-.wPiece{
-  
+.wPiece {
+
   height: 80%;
   cursor: grab;
   /* filter: drop-shadow(0 0 10px black) ; */
+  transition: 1s;
+}
+
+.EndGameModalContainer {
+
+  width: 80vh;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
 
 }
 
-.bPiece{
+.EndGameModalContent{
+
+  width: 50%;
+  height: 80%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+.bPiece {
 
   height: 80%;
   cursor: grab;
   /* filter:drop-shadow(0 0 10px white); */
+  transition: 1s;
 }
 
 
@@ -55,6 +92,13 @@ body{
   display: flex;
   justify-content: center;
   position: relative;
+
+}
+
+.EvalBar {
+  height: 100px;
+  width: 500px;
+  background-color: rgb(166, 131, 248);
 }
 
 .Coordinates {
@@ -77,9 +121,9 @@ body{
 
 .Files {
   position: absolute;
-  bottom:  -30px;
-  width: 80vh;  
-  display: flex; 
+  bottom: -30px;
+  width: 80vh;
+  display: flex;
   justify-content: space-around;
 
 }
@@ -89,13 +133,9 @@ body{
   background-color: transparent;
 }
 
-.File {
+.File {}
 
-
-
-}
-
-.Turn{
+.Turn {
 
   position: absolute;
   right: -10vh;
@@ -106,7 +146,7 @@ body{
   width: 10vh;
   height: 10vh;
   background-color: #eae9d2;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,10 +163,10 @@ body{
   justify-content: center;
 }
 
-.availableMove{
+.availableMove {
   position: absolute;
   width: 4%;
   height: 4%;
   border-radius: 50%;
-  background-color:rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.25);
 }
